@@ -1,0 +1,66 @@
+body {
+    background:slategray; /* 设置背景色为 burlywood */
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    height: 100vh; /* 使用全屏高度 */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 中心对齐 */
+}
+
+p {
+    line-height: 3.0;
+}
+
+article + article {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid #0c0f21;
+}
+
+/* 给表单容器添加透明背景和阴影，使其与背景兼容 */
+.form-container {
+    background: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加轻微的阴影 */
+    border-radius: 10px;
+    padding: 50px;
+    width: 100%;
+    max-width: 700px; /* 限制表单的最大宽度 */
+    box-sizing: border-box; /* 包含内边距和边框 */
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* 提交按钮 */
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 输入框焦点样式 */
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
